@@ -20,8 +20,8 @@
         android:orientation="horizontal"
         android:id="@+id/list_card"
         android:visibility="invisible">
-    <View
+    <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/contact_all_list_background_color"/>
+            android:background="@color/contact_all_list_background_color" />
 </LinearLayout>

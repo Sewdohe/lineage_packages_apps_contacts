@@ -22,6 +22,10 @@
     <!-- Directory partition name -->
     <string name="contactsList">Contacts</string>
 
+    <string name="mail_subheader_title">Subheader Title</string>
+
+    <string name="extended_fab_label">+</string>
+
     <!-- Name of the dynamic shortcut that creates a new contact [CHAR LIMIT=30] -->
     <string name="shortcut_add_contact">Add contact</string>
 

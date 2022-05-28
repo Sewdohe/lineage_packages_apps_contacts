@@ -27,15 +27,20 @@
     android:layout_height="match_parent"
     android:visibility="gone"
     android:background="?attr/contact_browser_background" >
-
+    
     <LinearLayout
-        android:id="@+id/alert_container"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:background="@color/alert_background"
-        android:paddingStart="20dp"
-        android:visibility="gone">
+    android:id="@+id/alert_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/alert_background"
+    android:paddingStart="20dp"
+    android:visibility="gone">
+    
+        <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/contact_all_list_background_color">
 
         <TextView
             android:id="@+id/alert_text"
@@ -57,7 +62,9 @@
             android:background="?android:attr/selectableItemBackground"
             android:scaleType="center"
             android:src="@drawable/quantum_ic_cancel_vd_theme_24" />
+        </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
+
 
     <!-- Shown only when an Account filter is set.
          - paddingTop should be here to show "shade" effect correctly. -->

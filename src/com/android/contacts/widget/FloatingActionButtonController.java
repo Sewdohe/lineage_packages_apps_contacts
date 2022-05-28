@@ -44,11 +44,11 @@ public class FloatingActionButtonController {
     private final int mFloatingActionButtonWidth;
     private final int mFloatingActionButtonMarginRight;
     private final View mFloatingActionButtonContainer;
-    private final ImageButton mFloatingActionButton;
+    // private final ImageButton mFloatingActionButton;
     private final Interpolator mFabInterpolator;
     private int mScreenWidth;
 
-    public FloatingActionButtonController(Activity activity, View container, ImageButton button) {
+    public FloatingActionButtonController(Activity activity, View container) {
         Resources resources = activity.getResources();
         mFabInterpolator = AnimationUtils.loadInterpolator(activity,
                 android.R.interpolator.fast_out_slow_in);
@@ -59,7 +59,6 @@ public class FloatingActionButtonController {
         mAnimationDuration = resources.getInteger(
                 R.integer.floating_action_button_animation_duration);
         mFloatingActionButtonContainer = container;
-        mFloatingActionButton = button;
         ViewUtil.setupFloatingActionButton(mFloatingActionButtonContainer, resources);
     }
 
@@ -87,11 +86,11 @@ public class FloatingActionButtonController {
     }
 
     public void changeIcon(Drawable icon, String description) {
-        if (mFloatingActionButton.getDrawable() != icon
-                || !mFloatingActionButton.getContentDescription().equals(description)) {
-            mFloatingActionButton.setImageDrawable(icon);
-            mFloatingActionButton.setContentDescription(description);
-        }
+        // if (mFloatingActionButton.getDrawable() != icon
+        //         || !mFloatingActionButton.getContentDescription().equals(description)) {
+        //     mFloatingActionButton.setImageDrawable(icon);
+        //     mFloatingActionButton.setContentDescription(description);
+        // }
     }
 
     /**
@@ -168,16 +167,16 @@ public class FloatingActionButtonController {
     public void scaleIn(int delayMs) {
         setVisible(true);
         AnimUtils.scaleIn(mFloatingActionButtonContainer, FAB_SCALE_IN_DURATION, delayMs);
-        AnimUtils.fadeIn(mFloatingActionButton, FAB_SCALE_IN_DURATION,
-                delayMs + FAB_SCALE_IN_FADE_IN_DELAY, null);
+        // AnimUtils.fadeIn(mFloatingActionButton, FAB_SCALE_IN_DURATION,
+        //         delayMs + FAB_SCALE_IN_FADE_IN_DELAY, null);
     }
 
     /**
      * Immediately remove the affects of the last call to {@link #scaleOut}.
      */
     public void resetIn() {
-        mFloatingActionButton.setAlpha(1f);
-        mFloatingActionButton.setVisibility(View.VISIBLE);
+        // mFloatingActionButton.setAlpha(1f);
+        // mFloatingActionButton.setVisibility(View.VISIBLE);
         mFloatingActionButtonContainer.setScaleX(1);
         mFloatingActionButtonContainer.setScaleY(1);
     }
@@ -190,7 +189,7 @@ public class FloatingActionButtonController {
         AnimUtils.scaleOut(mFloatingActionButtonContainer, mAnimationDuration);
         // Fade out the icon faster than the scale out animation, so that the icon scaling is less
         // obvious. We don't want it to scale, but the resizing the container is not as performant.
-        AnimUtils.fadeOut(mFloatingActionButton, FAB_ICON_FADE_OUT_DURATION, null);
+        // AnimUtils.fadeOut(mFloatingActionButton, FAB_ICON_FADE_OUT_DURATION, null);
     }
 
     /**

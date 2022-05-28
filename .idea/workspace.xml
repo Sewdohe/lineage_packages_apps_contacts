@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="13e543fb-3572-4089-be3b-e25b03c67cc4" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Android.bp" beforeDir="false" afterPath="$PROJECT_DIR$/Android.bp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/layout/contact_list_card.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/contact_list_card.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/layout/contact_list_content.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/contact_list_content.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/layout/contact_list_filter_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/contact_list_filter_item.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/layout/floating_action_button.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/layout/floating_action_button.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/values/dimens.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/android/contacts/ContactsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/android/contacts/ContactsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/android/contacts/activities/ContactSelectionActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/android/contacts/activities/ContactSelectionActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/android/contacts/activities/PeopleActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/android/contacts/activities/PeopleActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/android/contacts/widget/FloatingActionButtonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/android/contacts/widget/FloatingActionButtonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AndroidManifest.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="29izHZCcE7UqQkLVuUbIcL5Do29" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13e543fb-3572-4089-be3b-e25b03c67cc4" name="Changes" comment="" />
+      <created>1653610608000</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1653610608000</updated>
+    </task>
+    <servers />
+  </component>
+</project>

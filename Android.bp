@@ -31,7 +31,7 @@ license {
 
 android_app {
     name: "Contacts",
-
+    resource_dirs: ["res"],
     srcs: [
         "src/**/*.java",
         "src-bind/**/*.java",
@@ -41,6 +41,7 @@ android_app {
         "com.android.phone.common-lib",
 
         "com.google.android.material_material",
+        // "etar-lib-com.google.android.material_material",
         "androidx.transition_transition",
         "androidx.legacy_legacy-support-v13",
         "androidx.appcompat_appcompat",
@@ -64,5 +65,5 @@ android_app {
     },
 
     sdk_version: "system_current",
-    min_sdk_version: "21",
+    min_sdk_version: "27",
 }

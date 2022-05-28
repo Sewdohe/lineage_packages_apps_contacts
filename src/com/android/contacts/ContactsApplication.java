@@ -34,6 +34,7 @@ import com.android.contacts.util.Constants;
 import com.android.contactsbind.analytics.AnalyticsUtil;
 
 import com.google.common.annotations.VisibleForTesting;
+import androidx.appcompat.app.AppCompatDelegate; 
 
 public class ContactsApplication extends Application {
     private static final boolean ENABLE_LOADER_LOG = false; // Don't submit with true
@@ -96,6 +97,10 @@ public class ContactsApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+
+        AppCompatDelegate.setDefaultNightMode(
+            AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
+
 
         if (Log.isLoggable(Constants.PERFORMANCE_TAG, Log.DEBUG)) {
             Log.d(Constants.PERFORMANCE_TAG, "ContactsApplication.onCreate start");

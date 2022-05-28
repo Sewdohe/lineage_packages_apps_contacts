@@ -144,7 +144,7 @@ public class PeopleActivity extends AppCompatContactsActivity implements
     private ContactsRequest mRequest;
     private AccountTypeManager mAccountTypeManager;
 
-    private FloatingActionButtonController mFloatingActionButtonController;
+    // private FloatingActionButtonController mFloatingActionButtonController;
     private View mFloatingActionButtonContainer;
     private boolean wasLastFabAnimationScaleIn = false;
 
@@ -533,18 +533,18 @@ public class PeopleActivity extends AppCompatContactsActivity implements
         mMembersFragment = (GroupMembersFragment) fragmentManager.findFragmentByTag(TAG_GROUP_VIEW);
 
         // Configure floating action button
-        mFloatingActionButtonContainer = findViewById(R.id.floating_action_button_container);
-        final ImageButton floatingActionButton
-                = (ImageButton) findViewById(R.id.floating_action_button);
-        floatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                AccountFilterUtil.startEditorIntent(PeopleActivity.this, getIntent(),
-                        mContactListFilterController.getFilter());
-            }
-        });
-        mFloatingActionButtonController = new FloatingActionButtonController(this,
-                mFloatingActionButtonContainer, floatingActionButton);
+        // mFloatingActionButtonContainer = findViewById(R.id.floating_action_button_container);
+        // final ImageButton floatingActionButton
+        //         = (ImageButton) findViewById(R.id.floating_action_button);
+        // floatingActionButton.setOnClickListener(new View.OnClickListener() {
+        //     @Override
+        //     public void onClick(View v) {
+        //         AccountFilterUtil.startEditorIntent(PeopleActivity.this, getIntent(),
+        //                 mContactListFilterController.getFilter());
+        //     }
+        // });
+        // mFloatingActionButtonController = new FloatingActionButtonController(this,
+        //         mFloatingActionButtonContainer, floatingActionButton);
 
         invalidateOptionsMenuIfNeeded();
 
@@ -656,8 +656,8 @@ public class PeopleActivity extends AppCompatContactsActivity implements
     }
 
     private void initializeFabVisibility() {
-        mFloatingActionButtonContainer.setVisibility(shouldHideFab() ? View.GONE : View.VISIBLE);
-        mFloatingActionButtonController.resetIn();
+        // mFloatingActionButtonContainer.setVisibility(shouldHideFab() ? View.GONE : View.VISIBLE);
+        // mFloatingActionButtonController.resetIn();
         wasLastFabAnimationScaleIn = !shouldHideFab();
     }
 
@@ -680,23 +680,23 @@ public class PeopleActivity extends AppCompatContactsActivity implements
     }
 
     public void showFabWithAnimation(boolean showFab) {
-        if (mFloatingActionButtonContainer == null) {
-            return;
-        }
-        if (showFab) {
-            if (!wasLastFabAnimationScaleIn) {
-                mFloatingActionButtonContainer.setVisibility(View.VISIBLE);
-                mFloatingActionButtonController.scaleIn(0);
-            }
-            wasLastFabAnimationScaleIn = true;
+        // if (mFloatingActionButtonContainer == null) {
+        //     return;
+        // }
+        // if (showFab) {
+        //     if (!wasLastFabAnimationScaleIn) {
+        //         mFloatingActionButtonContainer.setVisibility(View.VISIBLE);
+        //         mFloatingActionButtonController.scaleIn(0);
+        //     }
+        //     wasLastFabAnimationScaleIn = true;
 
-        } else {
-            if (wasLastFabAnimationScaleIn) {
-                mFloatingActionButtonContainer.setVisibility(View.VISIBLE);
-                mFloatingActionButtonController.scaleOut();
-            }
-            wasLastFabAnimationScaleIn = false;
-        }
+        // } else {
+        //     if (wasLastFabAnimationScaleIn) {
+        //         mFloatingActionButtonContainer.setVisibility(View.VISIBLE);
+        //         mFloatingActionButtonController.scaleOut();
+        //     }
+        //     wasLastFabAnimationScaleIn = false;
+        // }
     }
 
     private void updateViewConfiguration(boolean forceUpdate) {

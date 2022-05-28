@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 
-<view
+<com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     class="com.android.contacts.list.ContactListFilterView"
     android:descendantFocusability="blocksDescendants"
@@ -66,5 +66,4 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|center_vertical" />
-</view>
-
+</com.google.android.material.card.MaterialCardView>

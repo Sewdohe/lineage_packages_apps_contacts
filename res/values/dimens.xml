@@ -160,8 +160,8 @@
     <dimen name="expanding_entry_card_item_icon_margin_right">12dp</dimen>
     <dimen name="expanding_entry_card_item_header_only_margin_top">6dp</dimen>
 
-    <dimen name="expanding_entry_card_card_corner_radius">2dp</dimen>
-    <dimen name="expanding_entry_card_header_margin_bottom">2dp</dimen>
+    <dimen name="expanding_entry_card_card_corner_radius">8dp</dimen>
+    <dimen name="expanding_entry_card_header_margin_bottom">3dp</dimen>
     <!-- The top margin when the sub header and text views are both gone -->
     <dimen name="expanding_entry_card_item_header_only_margin_bottom">2dp</dimen>
     <dimen name="expanding_entry_card_item_no_icon_margin_top">6dp</dimen>
@@ -281,7 +281,7 @@
     <dimen name="contact_browser_list_header_icon_right_margin_alt">16dp</dimen>
     <dimen name="contact_browser_list_header_left_margin">16dip</dimen>
     <dimen name="contact_browser_list_header_right_margin">@dimen/list_visible_scrollbar_padding</dimen>
-    <dimen name="contact_browser_list_item_text_indent">8dip</dimen>
+    <dimen name="contact_browser_list_item_text_indent">4dip</dimen>
     <dimen name="contact_browser_list_header_height">48dp</dimen>
     <dimen name="contact_browser_list_header_icon_size">24dp</dimen>
     <dimen name="contact_browser_list_header_icon_size_alt">20dp</dimen>

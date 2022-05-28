@@ -63,6 +63,7 @@ import com.android.contacts.list.UiIntentActions;
 import com.android.contacts.logging.ListEvent;
 import com.android.contacts.util.ImplicitIntentsUtil;
 import com.android.contacts.util.ViewUtil;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
@@ -90,6 +91,8 @@ public class ContactSelectionActivity extends AppCompatContactsActivity implemen
 
     private ActionBarAdapter mActionBarAdapter;
     private Toolbar mToolbar;
+
+    private FloatingActionButton floatingActionButton;
 
     public ContactSelectionActivity() {
         mIntentResolver = new ContactsIntentResolver(this);
@@ -652,7 +655,7 @@ public class ContactSelectionActivity extends AppCompatContactsActivity implemen
 
     @Override
     public void onClick(View view) {
-        if (view.getId() == R.id.floating_action_button) {
+        if (view.getId() == R.id.floating_action_button_container) {
             startCreateNewContactActivity();
         }
     }
